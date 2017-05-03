@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Medpal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script language="JavaScript">
+        function js1(){
+            document.form-login.method="post";
+            document.form-login.action="/assets/appoinment.html";
+        }
+    </script>
+</head>
+<body id="page-top" class="index">
+<div id="skipnav">
+    <a href="#maincontent">Skip to main content</a>
+</div>
+<!--Heading Section-->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand" href="sample.html">Medpal</a>
+        </div>
+    </div>
+</nav>
+<br>
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Login</h2>
+                <hr class="divider">
+            </div>
+        </div>
+        <div class="continer">
+            <div class="col-md-6 col-md-offset-3">
+        <div id="login">
+            <form name='form-login'>
+                <p><span class="fontawesome-user"></span><input type="text" name="Uname" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fontawesome-lock" ></span><input type="password" name="Password"  value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                <input type="submit" name="login" id="login_id" onClick="login.performClick();" value="Login">
+                <br>
+                <br>
+                <!--<p style="color:#a9a9a9">Not a member? <a href="#" class="blue">Sign up now</a></p> -->
+            </form>
+
+        </div>
+        </div>
+        <!-- Going to be used for taking appoinments
+        <div class="col-md-7 col-md-offset-3">
+            <div class="form-area">
+                <div class="from-group" width=250>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+            </div>
+        </div>
+         Going to be used for taking appoinments  -->
+    </div>
+</section>
+
+<footer class="text-center">
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Medstream Technologies 2017
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
